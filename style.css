@@ -1,0 +1,111 @@
+/* Importa fonte de terror (opcional, combine com HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #f1f1f1;
+  background-color: #0b0b0b;
+}
+
+/* Hero Banner */
+.hero {
+  background: url('images/banner.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  text-align: center;
+  color: #f1f1f1;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ff0000;
+  text-shadow: 2px 2px 8px black;
+  margin-bottom: 1rem;
+  font-family: 'Creepster', cursive;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* Botão */
+.btn {
+  padding: 0.8rem 1.5rem;
+  background: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.btn:hover {
+  background: #cc0000;
+  box-shadow: 0 0 15px #cc0000;
+}
+
+/* Seção Sobre */
+.sobre {
+  padding: 4rem 2rem;
+  background-color: #111;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff0000;
+  text-shadow: 1px 1px 5px black;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
